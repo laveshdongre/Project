@@ -1,78 +1,66 @@
-/* *{
-    margin: 0%;
-    padding:0%;
-    box-sizing: border-box;
-}*/
- /* html, body {
-  width: auto!important;
-  overflow-x: hidden!important;
-}  
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0
-} */
+@import url('https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url('./bubbybtn.css');
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1300px;
-  padding-left: 150px;
-  padding-bottom: 50px;
-}
-
-.section {
-  width: 50%;
-  height: 50%;
-}
-video {
-  width: 100%;
-  height: 56.25%;
-  /* margin-top: 21.875%; */
-} 
-body{
-    min-height: 50vh;
-    padding: 20px;
+.searchsub {
+    height: 60px;
+    width: 700px;
     
+    border-radius: 10px;
+    background: #000000;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-html {
-    -webkit-text-size-adjust: 100%;
-    line-height: 1.15
+.item{
+    display: none;
 }
-body,html {
-    -webkit-tap-highlight-color: transparent;
-    font-family: PhonePeSans,sans-serif,Helvetica,Arial;
-    font-size: 16px;
+.items{
+    height: 80% !important;
 }
-.Heading{
-  color: #361374;
-  font-size: 1em;
-  font-weight: 500;
-  letter-spacing: -.57px;
-  line-height: 1.12;
-} 
-.Sub-Heading{
-  color: hsl(0, 6%, 50%);
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: -.33px;
-  line-height: 1.5
-}
-.Hint{
-    color: #232028;
-    font-size: 0.75rem;
-    font-weight: 300;
-    letter-spacing: 0;
-    line-height: 1.4;
-    opacity: 0.7;
-    width: 90%
-}
-.Heading h1{
-  padding-left: 30px;
-  font-size: 2.3em;
+#subject {
+    padding: 2px;
+    font-size: 20px;
+    color: white !important;
+    height: 99%;
+    border: none;
+    background-color: transparent;
+    border-radius: 13px;
 }
 
+.searchsub img {
+    height: 60%;
+}
+
+.searchsub input {
+    border: none;
+    outline: none;
+}
+
+.searchsub input:active {
+    border: none;
+    outline: none;
+}
+
+.glow{
+    /* display: none; */
+    
+    background: #06d5ff !important; 
+    animation: glow linear 2s infinite;
+    cursor: pointer;
+}
+@keyframes glow {
+    0%{
+        box-shadow: 0 0 0px cyan;
+    }
+    50%{
+        box-shadow: 0 0 70px cyan;
+    }
+    100%{
+        box-shadow: 0 0 0px cyan;
+    }
+}
+.w-60{
+    width: 60px !important;
+    border-radius: 50%;
+}
